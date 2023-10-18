@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>ThymeLeaf 연습</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+</head>
+<body>
+<h1 th:text="'Hello!, ' + ${cont_title} + '~'"></h1>
+<hr>
+
+<ul>
+	<li th:each="data : ${list}" th:text="${data}"></li>
+</ul>
+</body>
+</html>
